@@ -1,0 +1,10 @@
+@model IEnumerable<Book>
+
+<h2>Books list:</h2>
+
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>@book.title - @book.genre | @book.author, @book.year</li>
+    }
+</ul>

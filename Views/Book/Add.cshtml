@@ -1,0 +1,23 @@
+@model hw.ViewModel.BookViewModel
+
+<h2>Add new book</h2>
+
+<form asp-action="Add" method="post">
+    <div>
+        <label>Title:</label>
+        <input asp-for="title"/>
+    </div>
+    <div>
+        <label>Author:</label>
+        <input asp-for="author"/>
+    </div>
+    <div>
+        <label>Genre:</label>
+        <input asp-for="genre"/>
+    </div>
+    <div>
+        <label>Year:</label>
+        <input asp-for="year"/>
+    </div>
+    <button type="submit">Add</button>
+</form>
